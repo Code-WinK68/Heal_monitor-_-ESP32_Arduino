@@ -5,7 +5,7 @@ Hệ thống nhúng thu thập, lọc số (Digital Signal Processing) và hiể
 
 ---
 
-## Tính Năng Nổi Bật
+##  Tính Năng Nổi Bật
 
 * **Kiến trúc Dual Hardware I2C độc lập:** Tách biệt ngoại vi hiển thị (OLED) và cảm biến nhạy cảm (MLX90614) trên 2 kênh phần cứng riêng biệt nhằm chống nghẽn và treo chip do hiện tượng *Clock Stretching*.
 * **Xử lý tín hiệu số ECG thời gian thực:** Tích hợp bộ lọc đáp ứng xung vô hạn (IIR/EMA) tần số lấy mẫu $250\text{ Hz}$ để khử nhiễu đường nền (Baseline Wander) và làm mịn tín hiệu (Smoothing).
@@ -15,7 +15,7 @@ Hệ thống nhúng thu thập, lọc số (Digital Signal Processing) và hiể
 
 ---
 
-## 🛠️ Thành Phần Phần Cứng
+##  Thành Phần Phần Cứng
 
 1. **Vi điều khiển:** ESP32 DevKit Board.
 2. **Cảm biến ECG:** AD8232 (Single Lead Heart Rate Monitor).
@@ -26,7 +26,7 @@ Hệ thống nhúng thu thập, lọc số (Digital Signal Processing) và hiể
 
 ---
 
-## Sơ Đồ Kết Nối Ngoại Vi (Pin Mapping)
+##  Sơ Đồ Kết Nối Ngoại Vi (Pin Mapping)
 
 ### 1. Kênh Giao Tiếp I2C & Hiển Thị
 | Ngoại vi | Chân Linh Kiện | Chân ESP32 (GPIO) | Cấu hình & Vai trò |
@@ -55,7 +55,7 @@ Hệ thống nhúng thu thập, lọc số (Digital Signal Processing) và hiể
 
 ---
 
-## Phân Tích Thuật Toán & Xử Lý Tín Hiệu
+##  Phân Tích Thuật Toán & Xử Lý Tín Hiệu
 
 ### 1. Kiến Trúc Lọc Số Bộ Đôi EMA (Exponential Moving Average) Cho ECG
 Tín hiệu từ cảm biến AD8232 thường bị ảnh hưởng nghiêm trọng bởi nhiễu trôi dạt đường nền (do nhịp thở của người đo) và nhiễu cơ học tần số cao (do rung cơ). Hệ thống giải quyết bằng thuật toán lọc số hai giai đoạn:
@@ -79,7 +79,7 @@ Thanh ghi cảm biến quang học được cấu hình thông qua tập lệnh:
 
 ---
 
-## Cấu Trúc Mã Nguồn
+##  Cấu Trúc Mã Nguồn
 
 Dự án được phát triển theo từng giai đoạn module hóa:
 * `UI_Menu_Frame.ino`: Khung xương điều khiển màn hình và thuật toán FSM nút nhấn.
@@ -89,7 +89,7 @@ Dự án được phát triển theo từng giai đoạn module hóa:
 
 ---
 
-## Hướng Dẫn Cài Đặt & Sử Dụng
+##  Hướng Dẫn Cài Đặt & Sử Dụng
 
 1. Tải và cài đặt các thư viện bắt buộc trong **Arduino IDE Library Manager**:
    * `U8g2` (bởi oliver)
