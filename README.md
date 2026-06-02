@@ -1,5 +1,5 @@
 # Hệ Thống Đánh Giá Chất Lượng Tim Mạch & Giám Sát Sức Khỏe (ESP32)
-### Đồ án kỹ thuật - Nhóm 10 (Mã số: 169226)
+### Kỹ thuật vi xử lý - Nhóm 10 (Mã lớp: 169226)
 
 Hệ thống nhúng thu thập, lọc số (Digital Signal Processing) và hiển thị thời gian thực các thông số sinh học bao gồm: Điện tâm đồ (ECG), Nồng độ oxy trong máu (SpO2), Nhịp tim (BPM) và Nhiệt độ cơ thể không tiếp xúc. Hệ thống sử dụng vi điều khiển **ESP32**, phân tầng giao diện bằng Menu điều hướng qua nút nhấn và màn hình OLED SH1106.
 
